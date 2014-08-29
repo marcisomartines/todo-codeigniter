@@ -14,4 +14,8 @@ class Site extends CI_Controller {
 	public function add(){
 		$this->load->view('vw_add');
 	}
+
+	public function remove(){
+		$this->load->view('vw_remove');
+	}
 }

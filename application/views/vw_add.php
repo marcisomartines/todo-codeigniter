@@ -10,7 +10,7 @@ if(isset($_POST['name'])){
 		$adicionaQuery->execute([
 			'name'=>$name,
 			'user'=>$_SESSION['user_id']
-			]);
+		]);
 	}
 }
 

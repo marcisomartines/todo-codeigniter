@@ -31,6 +31,7 @@ $items=$itemQuery->rowCount() ? $itemQuery : [];
 	<?php foreach($items as $item){ ?>
 		<li>
 			<span class="item<?=$item['done']?' done' : ''?>"><?=$item['name']?></span>
+			<a href="<?=base_url()?>index.php/site/remove?as=remove&item=<?=$item['id']?>" class="done-buttom">Remover</a>
 			<?php
 			if(!$item['done']){
 			?>
